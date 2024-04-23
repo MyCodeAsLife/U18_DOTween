@@ -8,11 +8,16 @@ public class ChangeText : MonoBehaviour
 
     private void Start()
     {
+        const string ReplacementText = "Замена";
+        const string AdditionText = " Дополнение";
+        const string IteratingText = "Перебор";
+        const float Duration = 3f;
+
         Sequence sequence = DOTween.Sequence();
 
-        sequence.Append(_text.DOText("Замена", 3f));
-        sequence.Append(_text.DOText(" Дополнение", 3f).SetRelative());
-        sequence.Append(_text.DOText("Взлом", 2f, true, ScrambleMode.All));
+        sequence.Append(_text.DOText(ReplacementText, Duration));
+        sequence.Append(_text.DOText(AdditionText, Duration).SetRelative());
+        sequence.Append(_text.DOText(IteratingText, Duration, true, ScrambleMode.All));
         sequence.SetLoops(-1, LoopType.Restart);
     }
 }

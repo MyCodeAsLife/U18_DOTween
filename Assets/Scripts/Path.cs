@@ -7,11 +7,13 @@ public class Path : MonoBehaviour
 
     private void Start()
     {
-        Tween tween = transform.DOPath(_waypoints, 5f, PathType.CatmullRom).
-                                SetOptions(true).               
-                                SetLookAt(0.01f).               
-                                SetLoops(-1).                 
-                                SetEase(Ease.Linear);           
+        const float Duration = 5f;
+        const float LookAhead = 0.01f;
 
+        Tween tween = transform.DOPath(_waypoints, Duration, PathType.CatmullRom).
+                                SetOptions(true).
+                                SetLookAt(LookAhead).
+                                SetLoops(-1).
+                                SetEase(Ease.Linear);
     }
 }
