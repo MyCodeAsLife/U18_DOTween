@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class ChangeScale : MonoBehaviour
+public class ScaleChanger : MonoBehaviour
 {
     private void Start()
     {

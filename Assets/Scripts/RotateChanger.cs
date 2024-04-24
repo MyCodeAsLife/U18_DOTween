@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class ChangeRotate : MonoBehaviour
+public class RotateChanger : MonoBehaviour
 {
     private void Start()
     {
