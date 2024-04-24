@@ -8,10 +8,10 @@ public class ChangeText : MonoBehaviour
 
     private void Start()
     {
+        const float Duration = 3f;
         const string ReplacementText = "Замена";
         const string AdditionText = " Дополнение";
         const string IteratingText = "Перебор";
-        const float Duration = 3f;
 
         Sequence sequence = DOTween.Sequence();
 

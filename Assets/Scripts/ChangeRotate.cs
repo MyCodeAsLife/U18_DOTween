@@ -5,9 +5,10 @@ public class ChangeRotate : MonoBehaviour
 {
     private void Start()
     {
-        Vector3 newRotate = new Vector3(60f, 15f, 0);
-        float duration = 2f;
+        const float Duration = 2f;
 
-        transform.DORotate(newRotate, duration).SetLoops(-1, LoopType.Yoyo);
+        Vector3 newRotate = new Vector3(60f, 15f, 0);
+
+        transform.DORotate(newRotate, Duration).SetLoops(-1, LoopType.Yoyo);
     }
 }

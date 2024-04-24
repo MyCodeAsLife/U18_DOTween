@@ -5,9 +5,9 @@ public class ChangeScale : MonoBehaviour
 {
     private void Start()
     {
-        float scale = 3f;
-        float duration = 3f;
+        const float Scale = 3f;
+        const float Duration = 3f;
 
-        transform.DOScale(scale, duration).SetLoops(-1, LoopType.Yoyo);
+        transform.DOScale(Scale, Duration).SetLoops(-1, LoopType.Yoyo);
     }
 }
